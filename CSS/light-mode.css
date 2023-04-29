@@ -1,0 +1,51 @@
+body {
+    background-color: var(--White-BG);
+    transition: 0.3s;
+}
+body::before {
+    background-color: var(--Very-Pale-Blue-Top-BG-Pattern);
+    transition: 0.3s;
+}
+.top-txt .container header h1,
+.main-grid .container .box .middle h1, 
+.bottom-section .container .box .bottom h1 {
+    color: var(--Very-Dark-Blue-Text);
+    transition: 0.3s;
+}
+.top-txt .container .dark-light-btn span {
+    color: var(--Toggle-Light);
+    transition: 0.3s;
+}
+.main-grid .container .box,
+.bottom-section .second-grid .box {
+    background-color: var(--Light-Grayish-Blue-Card-BG);
+    transition: 0.3s;
+}
+.box:hover {
+    background-color: hsl(0deg 0% 91%) !important;
+    transition: 0.3s;
+}
+.main-grid .container .box .upper span,
+.main-grid .container .box .middle span,
+.top-txt .container span,
+.bottom-section .second-grid .box .top span,
+.bottom-section .container h1 {
+    color: var(--Dark-Grayish-Blue-Text);
+    transition: 0.3s;
+}
+.top-txt .container .dark-light-btn label {
+    background-color: var(--Toggle-Light);
+    transition: 0.3s;
+}
+.top-txt .container .dark-light-btn label::before {
+    background-color: var(--White-BG);
+    transition: 0.3s;
+}
+
+
+@media (max-width: 575px) {
+    .top-txt .container header {
+        border-bottom: 1px solid var(--Toggle-Light);
+        transition: 0.3s;
+    }
+}
